@@ -18,4 +18,12 @@ public class Livro {
         System.out.print("Páginas: "+ paginas);
     }
     
+    public void emprestar() {
+        if (disponivel) {
+            disponivel = false;
+            System.out.println("Livro emprestado");
+        } else {
+            System.out.println("Livro não disponível");
+        }
+    }
 } 
